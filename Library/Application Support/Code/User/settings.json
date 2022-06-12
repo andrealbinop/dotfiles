@@ -1,0 +1,17 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Inconsolata Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Dracula",
+    "gitProjectManager.baseProjectsFolders": [
+        "~/code/github.com"
+    ],
+    "gitProjectManager.ignoredFolders": [
+
+    
+    ],
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.defaultDateStyle": "absolute",
+    "go.toolsManagement.autoUpdate": true
+}

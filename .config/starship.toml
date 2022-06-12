@@ -5,7 +5,7 @@ disabled = true
 disabled = true
 
 [cmd_duration]
-min_time = 500
+min_time = 1000
 format = "[$duration]($style) "
 
 [conda]
@@ -47,9 +47,6 @@ symbol = " "
 
 [git_status]
 format = "[$ahead_behind$untracked$modified]($style) "
-
-[golang]
-disabled = true
 
 [helm]
 disabled = true
@@ -102,10 +99,10 @@ disabled = true
 [python]
 disabled = true
 
-[ruby]
+[rust]
 disabled = true
 
-[rust]
+[ruby]
 disabled = true
 
 [scala]

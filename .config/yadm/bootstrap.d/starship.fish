@@ -1,12 +1,12 @@
 #!/usr/bin/env fish
 
+set scriptid (basename (status --current-filename))
 set system_type (uname -s)
 set starship (which starship)
 if ! test $starship
-  if test "$system_type" = "Darwin"
+    echo "[$scriptid] Installing: 'starship'"
     brew install starship
     set starship (which starship)
-  end
 end
 
 echo "$starship init fish | source" > "$HOME/.config/fish/conf.d/starship.fish" 

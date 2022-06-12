@@ -1,0 +1,16 @@
+[user]
+	name = André Albino Pereira
+	email = andre.pereira@hashicorp.com
+	signingkey = 893BE2CE3409B20C
+[credential]
+	helper = osxkeychain
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[gpg]
+	program = gpg

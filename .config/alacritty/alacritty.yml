@@ -1,0 +1,61 @@
+# vi: ft=yaml
+import:
+  - ~/.config/alacritty/dracula.yml
+
+env:
+  TERM: xterm-256color
+
+key_bindings:
+  - { key: P, mods: Command|Shift, chars: "\x1b[80;5u"}
+  - { key: Q, mods: Command|Shift, chars: "\x1b[81;5u"}
+
+window:
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  opacity: 1
+  decorations: buttonless
+  dynamic_title: true
+  dimensions:
+   columns: 120
+   lines: 40
+
+scrolling:
+  history: 10000
+  multiplier: 3
+  auto_scroll: false
+
+tabspaces: 4
+
+bell:
+  duration: 100
+  color: '#22212C'
+  command:
+    program: afplay
+    args: ["/System/Library/Sounds/Tink.aiff"]
+
+font:
+  normal:
+    family: Inconsolata Nerd Font
+  bold:
+    family: Inconsolata Nerd Font
+  italic:
+    family: Inconsolata Nerd Font
+  bold_italic:
+    family: Inconsolata Nerd Font
+  size: 16.0
+  use_thin_strokes: true
+
+cursor:
+  style:
+    shape: Beam
+    blinking: On
+
+live_config_reload: true
+
+key_bindings:
+  - { key: N, mods: Command, action: CreateNewWindow }
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }

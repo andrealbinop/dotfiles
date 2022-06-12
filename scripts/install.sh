@@ -19,6 +19,7 @@ xcode_unavailable() {
 if [ "$system_type" = "Darwin" ]; then
   run_if_unavailable 'python3' 'xcode_unavailable'
   run_if_unavailable 'brew' '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+  echo -e "if [ -d /home/linuxbrew ]; then\n  eval \$(/opt/homebrew/bin/brew shellenv)\nfi" >> $HOME/.zprofile
 elif [ "$system_type" = "Linux" ]; then
   run_if_unavailable 'git' 'sudo apt-get update && sudo apt-get install -y build-essential procps curl file git'
 	if [ ! -d '/home/linuxbrew' ]; then
