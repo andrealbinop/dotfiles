@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = andreptb@gmail.com
+	name = Andre Albino Pereira
+[core]
+	editor = nvim
